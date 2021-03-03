@@ -81,4 +81,4 @@ https://github.com/omarjesuss/frontend/blob/main/images/homepage.PNG?raw=true
 
 **Screenshot(s) van de tweede pagina (small screen):**
 
-<img src="images/list.png" width="375px" alt="list">
+https://github.com/omarjesuss/frontend/blob/main/images/list.PNG?raw=true
