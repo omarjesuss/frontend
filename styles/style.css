@@ -1,5 +1,43 @@
-/* CSS Document */
-*, *::after, *::before {
-  box-sizing:border-box;  
+h1 {
+    font-family: space mono;
+    font-size: 24px; font-style: normal;
+    font-variant: normal;
+    font-weight: 700;
+    line-height: 26.4px; }
+
+h2 {
+     font-family: space mono;
+     font-size: 24px;
+     font-style: normal;
+     font-variant: normal;
+     font-weight: 700;
+     line-height: 1.em; } 
+
+p {
+    font-family: rubik; 
+    font-size: 18px; 
+    font-style: normal; 
+    font-variant: normal; 
+    font-weight: 400; 
+    line-height: 30px; }
+    
+img {
+max-width: 300px;
 }
 
+
+ol {
+    font-family: space mono;
+    font-size: 24px;
+    margin: 2.5em;
+    list-style-type: decimal-leading-zero;
+
+li {
+font-family: space mono;
+font-size: 26px;
+padding: 2.5em;
+}
+
+.number {
+    color: #3232ef;
+}
