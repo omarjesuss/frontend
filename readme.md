@@ -37,8 +37,11 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 ## Voortgang 1 (week 3)
 
 ### Stand van zaken
-
--dit ging goed & dit was lastig-
+- geen hoofdletters in de html tags
+- geen ol en li maar articles van de lijst maken
+- een aside maken
+- een span gebruiken voor de nummers van de lijst
+- de gehele HTML structuur eerst goed krijgen
 
 **Screenshot(s):**
 
