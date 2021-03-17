@@ -6,9 +6,16 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 
 
 ## Bronnenlijst
-1. -bron 1-
-2. -bron 2-
-3. -...-
+1. https://www.liveabout.com/best-hip-hop-debut-albums-2858029
+2. https://www.htmldog.com/techniques/dropdowns/
+3. https://validator.w3.org/
+4. http://minifycode.com/
+5. https://www.youtube.com/watch?v=RNakAX3rVVw
+6. https://css-tricks.com/typography-for-developers/
+7. https://www.youtube.com/watch?v=jx5jmI0UlXU
+8. https://courses.wesbos.com/account/access/6034cbd22a34157df9edc504
+9. https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+10. https://www.youtube.com/watch?v=br-0i3U1VCA
 
 
 
@@ -24,24 +31,30 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 
 ## Voortgang 3 (week 6)
 
--same as voortgang 1-
+- dropdown menu toevoegen in de nav
+- articles in een section zetten
+- links afsluiten
 
 
 
 ## Voortgang 2 (week 5)
 
--same as voortgang 1-
+- geen li elementen maar articles
+- logo is svg
+- maken van onderste galerij met css grid of flexbox?
+- hele footer tekst is een link
+- link binnen title description
 
 
 
 ## Voortgang 1 (week 3)
-
-### Stand van zaken
 - geen hoofdletters in de html tags
 - geen ol en li maar articles van de lijst maken
 - een aside maken
 - een span gebruiken voor de nummers van de lijst
 - de gehele HTML structuur eerst goed krijgen
+
+### Stand van zaken
 
 **Screenshot(s):**
 
