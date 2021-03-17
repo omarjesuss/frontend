@@ -55,6 +55,10 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 - de gehele HTML structuur eerst goed krijgen
 
 ### Stand van zaken
+- onderste galerij opmaken in css grid 4 naast elkaar. css grid> container> article> img> p. image in de css expact ratio= 1:1.
+- span maken voor de lijst 1 t/m 10.
+- alleen 1 section gebruiken en hier alle articles in plaatsen.
+- nav hamburger menu van maken voor mobile, display none op de submenu's.
 
 **Screenshot(s):**
 
