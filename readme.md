@@ -16,6 +16,7 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 8. https://courses.wesbos.com/account/access/6034cbd22a34157df9edc504
 9. https://css-tricks.com/snippets/css/a-guide-to-flexbox/
 10. https://www.youtube.com/watch?v=br-0i3U1VCA
+11. box shadow: https://css-tricks.com/almanac/properties/b/box-shadow/
 
 
 
