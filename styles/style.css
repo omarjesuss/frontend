@@ -1,52 +1,378 @@
+body {
+    padding-left: 2em;
+    padding-top: 2em; }
+
+
+.articles {
+    max-width: 80%; }
+
+
+/* hoofd titel */
 h1 {
-    font-family: space mono;
+    font-family: "space mono";
     font-size: 	3.5em;
     font-style: normal;
     font-variant: normal;
-    font-weight: 700;
-    line-height: 26.4px; }
+    font-weight: normal;
+    line-height: 1.2em; 
+    color:#3C3C3C; }
+/* einde hoofd titel */
 
+
+/* sub-titels (artiest en albumnaam) */
 h2 {
-     font-family: space mono;
+     font-family: "space mono";
      font-size: 1.5em;
      font-style: normal;
      font-variant: normal;
-     font-weight: 700;
-     line-height: 1.em; } 
+     font-weight: normal;
+     line-height: 1.2em;
+     color:#3C3C3C;
+     max-width: max-content; }
+/* einde sub-titels (artiest en albumnaam) */
 
+
+/* body tekst */
 p {
-    font-family: rubik; 
+    font-family: "rubik"; 
     font-size: 1em; 
     font-style: normal; 
     font-variant: normal; 
-    font-weight: 400; 
-    line-height: 30px; }
+    font-weight: normal; 
+    line-height: 1.8em;
+    color:#3C3C3C;
+    max-width: 36em; }
+/* einde body tekst */
+
+
+/* detail tekstblokjes */
+p.author {
+    font-family: "space mono"; 
+    font-size: 1.125em; 
+    font-style: normal; 
+    font-variant: normal; 
+    font-weight: normal;
+    color:#3C3C3C; }
     
-img {
-max-width: 300px;
-}
-ul {
-    padding: 0;
+p.date {
+    font-family: "rubik"; 
+    font-size: 0.9em; 
+    font-style: italic; 
+    font-variant: normal; 
+    font-weight: normal; 
+    color:grey; }
+
+p.rang {
+    font-family: "space mono"; 
+    font-size: 1.625em;
+    font-style: normal;
+    font-variant: normal; 
+    font-weight: 700;
+    color: blue;
     margin: 0;
-}
-li {
-    display: inline;
-    position: relative;
-}
+    padding: 0;
+    border: 0; }
+
+p.totaal {
+    font-family: "space mono"; 
+    font-size: .7em;
+    font-style: normal;
+    font-variant: normal;  
+    font-weight: normal;
+    color: grey;
+    margin: 0;
+    padding: 0;
+    border: 0; }
+
+.lijst {
+    float: left;
+    padding-right: 1em;
+    padding-bottom: 0;
+    border-right: solid red;
+    margin-right: 1em; }
+
+/* einde detail tekstblokjes */
+
+
+/* responsive nav */
+.nav-top {
+    font-family: "rubik";
+    font-size: 1em;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: normal;
+    padding-right: 2em; }
+
+
+.nav-sub {
+    font-family: "space mono";
+    font-size: .8em;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: normal;
+    line-height: 2em; }
+
+
+.responsive-nav {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 1em: ;
+    min-height: 8vh; }
+
+
+.responsive-nav ul {
+    margin: 0;
+    padding: 0; }
+
+
+.nav-links {
+    display: flex;
+    justify-content: space-around;
+    width: 70%; }
+
+
+.nav-links li {
+    list-style: none; }
+
+    
 ul ul {
     position: absolute;
+    display: none; }
+
+
+li:hover ul {
+    padding: 0 1em 1em 1em;
+    display: block;
+    background-color: white; 
+    border-radius: 4px;
+/* box-shadow bron code: https://css-tricks.com/almanac/properties/b/box-shadow/ */
+    box-shadow:
+    0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+    0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+    0 12.5px 10px rgba(0, 0, 0, 0.06),
+    0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+    0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+    0 100px 80px rgba(0, 0, 0, 0.12); }
+
+
+a:link {
+    color: #3C3C3C; 
+    text-decoration: none; }
+
+
+a:visited {
+    color:  #3C3C3C; }
+
+
+a:hover {
+    color: blue; }
+/* responsive nav */
+
+/* mobile nav */
+.burger {
+    display: none;
+    cursor: pointer; }
+
+
+.burger div {
+    width: 25px;
+    height: 2px;
+    margin: .4em;
+    background-color: blue;
+    transition: all 0.3s ease; }
+
+
+@media screen and (max-width:45em) {
+
+body {
+    overflow-x: hidden; }
+
+
+h1 {    
+    font-size: 	1.8em; }
+
+
+.logo {
+    display: none; }
+    
+
+.nav-links {
+    position: absolute;
+    right: 0;
+    height: 85vh;
+    top: 15vh;
+    background-color: grey;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    opacity: 95%;
+    width: 100%;
+    transform: translateX(100%); 
+    transition: transform .5s ease-in; }
+
+.nav-sub {
+    display: none;}
+
+li:hover ul {
     display: none;
 }
-li:hover ul {
-    display: block;
+
+.burger {
+    display: block; }
+
+
+.nav-active {
+    transform: translateX(0%); }
+
+@keyframes navLinkFade {
+    from{
+        opacity: 0;
+        transform: translateX(50px); }
+
+
+    to{
+        opacity: 1;
+        transform: translateX(0px); }
+    }
 }
-.wrapper{
-    width: 90%;
+
+.toggle .line1 {
+    transform: rotate(-45deg) translate (-5px,6px); }
+.toggle .line2 {
+    opacity: 1; }
+.toggle .line3 {
+    transform: rotate(45deg) translate (-5px,-6px); }
+/* einde mobile nav */
+
+/* links */
+.author-link:link {
+        color: #3C3C3C; 
+        text-decoration: underline }
+    
+.author-link:visited {
+        color:  #3C3C3C; }
+    
+.author-link:hover {
+        background-color: gold; }
+
+.article-link:link {
+            color: #3C3C3C; 
+            text-decoration: underline; }
+        
+.article-link:visited {
+            color:  #3C3C3C; }
+        
+.article-link:hover {
+            background-color: gold; }
+
+/* links */
+
+/* aside navigatie */
+.nav-aside {
+    display: none; }
+
+.nav-top-aside {
+    font-family: "space mono";
+    font-size: 1.5em;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: normal;
+    line-height: 1.15em; 
+    color:#3C3C3C; }
+
+.nav-sub-aside {
+    font-family: "rubik";
+    font-size: 1em;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: bold;
+    line-height: 1.5em; 
+    color:#3C3C3C; }
+
+.nav-sub-genre {
+    font-family: "rubik";
+    font-size: 1em;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: normal;
+    line-height: 1em;
+    color:#3C3C3C; }
+
+.learn-more {
+    font-family: "space mono";
+    font-size: 1em;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: normal;
+    line-height: 1.6em;
+    letter-spacing: .03em; 
+    color:#3C3C3C; }
+/* einde aside navigatie */
+
+
+/* logo's, foto's en afbeeldingen */
+.logo {
+    width: 12em; }
+
+
+.logo-footer {
+    display: none; }
+
+
+.album {
+    max-width: 17em;
+    margin: 0;
+    padding: 0.1875em;
+    border: 0.125em solid #3C3C3C;
+    background: white; }
+/* logo's, foto's en afbeeldingen */
+
+
+/* grid */
+.wrapper {
+ 
+    width: 95%;
+    padding-top: 95;
     margin: 0 auto;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr) ); 
-}
-.item{
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr) ); }
+
+.item-img { 
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain; }
+
+figure {
+    margin: 0.5em;
+    border-style: solid; }
+
+figcaption {
+    font-family: "space mono"; 
+    font-size: 100%; 
+    font-style: normal; 
+    font-variant: normal; 
+    font-weight: normal; 
+    color:#3C3C3C;
     padding: 0;
-    border-style: solid;
-}
+    margin: .5em ; }
+/* einde grid */
+
+
+/* footer */
+.footer-top {
+    font-family: "rubik";
+    font-size: .8em;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: bold;
+    list-style: none; }
+
+.footer-sub {
+    font-family: "rubik";
+    font-size: .8em;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: bold;
+    list-style: none; } 
+/* einde footer */
