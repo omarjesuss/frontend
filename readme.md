@@ -17,6 +17,7 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 9. https://css-tricks.com/snippets/css/a-guide-to-flexbox/
 10. https://www.youtube.com/watch?v=br-0i3U1VCA
 11. box shadow: https://css-tricks.com/almanac/properties/b/box-shadow/
+12. https://css-tricks.com/full-width-containers-limited-width-parents/ (full width toegepast op de border>footer maar ik krijg een scrollbar
 
 
 
