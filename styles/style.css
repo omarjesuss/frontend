@@ -4,7 +4,8 @@ body {
 
 
 .articles {
-    max-width: 80%; }
+    max-width: 85%; }
+
 
 
 /* hoofd titel */
@@ -74,6 +75,7 @@ p.rang {
     border: 0; }
 
 p.totaal {
+    display: block;
     font-family: "space mono"; 
     font-size: .7em;
     font-style: normal;
@@ -90,7 +92,6 @@ p.totaal {
     padding-bottom: 0;
     border-right: solid red;
     margin-right: 1em; }
-
 /* einde detail tekstblokjes */
 
 
@@ -167,7 +168,7 @@ a:visited {
 
 a:hover {
     color: blue; }
-/* responsive nav */
+/* einde responsive nav */
 
 /* mobile nav */
 .burger {
@@ -183,7 +184,7 @@ a:hover {
     transition: all 0.3s ease; }
 
 
-@media screen and (max-width:45em) {
+@media screen and (max-width:57em) {
 
 body {
     overflow-x: hidden; }
@@ -202,11 +203,10 @@ h1 {
     right: 0;
     height: 85vh;
     top: 15vh;
-    background-color: grey;
+    background-color: rgb(216, 216, 216);
     display: flex;
     flex-direction: column;
     align-items: center;
-    opacity: 95%;
     width: 100%;
     transform: translateX(100%); 
     transition: transform .5s ease-in; }
@@ -215,8 +215,7 @@ h1 {
     display: none;}
 
 li:hover ul {
-    display: none;
-}
+    display: none; }
 
 .burger {
     display: block; }
@@ -264,6 +263,16 @@ li:hover ul {
             color:  #3C3C3C; }
         
 .article-link:hover {
+            background-color: gold; }
+
+.about-link:link {
+            color: #3C3C3C; 
+            text-decoration: none; }
+        
+.about-link:visited {
+            color:  #3C3C3C; }
+        
+.about-link:hover {
             background-color: gold; }
 
 /* links */
@@ -331,10 +340,8 @@ li:hover ul {
 
 /* grid */
 .wrapper {
- 
     width: 95%;
-    padding-top: 95;
-    margin: 0 auto;
+    margin: 4em auto;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr) ); }
 
@@ -360,6 +367,14 @@ figcaption {
 
 
 /* footer */
+footer {
+    border-top: solid black;
+    margin-top: 1em;}
+
+.footer-top li {
+    padding-right: 5em;}
+
+
 .footer-top {
     font-family: "rubik";
     font-size: .8em;
@@ -376,3 +391,62 @@ figcaption {
     font-weight: bold;
     list-style: none; } 
 /* einde footer */
+
+/* about us */
+.about-us {
+    margin-top: 2em;
+    margin-bottom: 2em; }
+
+    
+.about-us p {
+    max-width: 75%;
+    font-size: 1.1em; }
+
+h3 {
+    font-family: "space mono";
+    font-size: 1.1em;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: normal;
+    line-height: 1.5rem;
+    color:#3C3C3C;
+    max-width: max-content; }
+
+.read-more {
+    font-family: "rubik";
+    font-size: 1.1em;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 700;
+    line-height: 1.12;
+    color:#3C3C3C;
+    max-width: max-content; }
+
+.team {
+    font-family: "rubik";
+    font-size: 1.5em;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 400;
+    line-height: 1.12;      
+    color:#333 !important;
+    max-width: max-content; }
+
+.title {
+    font-family: "space mono";
+    font-size: 1em;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: normal;
+    line-height: 1.5rem;
+    color:grey;
+    max-width: max-content; }
+
+.img-team {
+    max-width: 16em;
+    max-height: min-content; }
+
+
+
+
+/* einde about us */
